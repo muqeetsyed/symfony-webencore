@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace AppBundle\Twig;
+namespace CodeExplorerBundle\Twig;
 
 /**
  * CAUTION: this is an extremely advanced Twig extension. It's used to get the
@@ -49,7 +49,7 @@ class SourceCodeExtension extends \Twig_Extension
 
     public function showSourceCode(\Twig_Environment $twig, \Twig_Template $template)
     {
-        return $twig->render('default/_source_code.html.twig', array(
+        return $twig->render('@CodeExplorer/source_code.html.twig', array(
             'controller' => $this->getController(),
             'template'   => $this->getTemplateSource($template),
         ));
@@ -62,19 +62,41 @@ class SourceCodeExtension extends \Twig_Extension
             return;
         }
 
-        $className = get_class($this->controller[0]);
-        $class = new \ReflectionClass($className);
-        $method = $class->getMethod($this->controller[1]);
+        $method = $this->getCallableReflector($this->controller);
 
-        $classCode = file($class->getFilename());
+        $classCode = file($method->getFilename());
         $methodCode = array_slice($classCode, $method->getStartline() - 1, $method->getEndLine() - $method->getStartline() + 1);
         $controllerCode = '    '.$method->getDocComment()."\n".implode('', $methodCode);
 
         return array(
-            'file_path' => $class->getFilename(),
+            'file_path' => $method->getFilename(),
             'starting_line' => $method->getStartline(),
             'source_code' => $this->unindentCode($controllerCode)
         );
+    }
+
+    /**
+     * Gets a reflector for a callable.
+     *
+     * This logic is copied from Symfony\Component\HttpKernel\Controller\ControllerResolver::getArguments
+     *
+     * @param callable $callable
+     *
+     * @return \ReflectionFunctionAbstract
+     */
+    private function getCallableReflector($callable)
+    {
+        if (is_array($callable)) {
+            return new \ReflectionMethod($callable[0], $callable[1]);
+        }
+
+        if (is_object($callable) && !$callable instanceof \Closure) {
+            $r = new \ReflectionObject($callable);
+
+            return $r->getMethod('__invoke');
+        }
+
+        return new \ReflectionFunction($callable);
     }
 
     private function getTemplateSource(\Twig_Template $template)
@@ -117,6 +139,6 @@ class SourceCodeExtension extends \Twig_Extension
     // the name of the Twig extension must be unique in the application
     public function getName()
     {
-        return 'app.source_code_extension';
+        return 'code_explorer_source_code';
     }
 }
