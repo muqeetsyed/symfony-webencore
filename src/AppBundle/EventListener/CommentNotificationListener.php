@@ -11,7 +11,6 @@
 
 namespace AppBundle\EventListener;
 
-use AppBundle\Entity\Comment;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Translation\TranslatorInterface;
@@ -64,7 +63,6 @@ class CommentNotificationListener
      */
     public function onCommentCreated(GenericEvent $event)
     {
-        /** @var Comment $comment */
         $comment = $event->getSubject();
         $post = $comment->getPost();
 
@@ -84,7 +82,7 @@ class CommentNotificationListener
         // See http://symfony.com/doc/current/email.html#sending-emails
         $message = \Swift_Message::newInstance()
             ->setSubject($subject)
-            ->setTo($post->getAuthor()->getEmail())
+            ->setTo($post->getAuthorEmail())
             ->setFrom($this->sender)
             ->setBody($body, 'text/html')
         ;
