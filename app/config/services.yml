@@ -30,23 +30,18 @@ services:
         arguments:
             $emailSender: '%app.notifications.email_sender%'
 
-    # when the service definition only contains arguments, you can omit the
-    # 'arguments' key and define the arguments just below the service class
     AppBundle\Twig\AppExtension:
-        $locales: '%app_locales%'
+        arguments:
+            $locales: '%app_locales%'
 
     AppBundle\EventListener\CommentNotificationSubscriber:
-        $sender: '%app.notifications.email_sender%'
+        arguments:
+            $sender: '%app.notifications.email_sender%'
 
     AppBundle\EventListener\RedirectToPreferredLocaleSubscriber:
-        $locales: '%app_locales%'
-        $defaultLocale: '%locale%'
+        arguments:
+            $locales: '%app_locales%'
+            $defaultLocale: '%locale%'
 
     # needed for the localizeddate Twig filter
     Twig\Extensions\IntlExtension: ~
-
-    # the slugger service needs a public alias for getting it from
-    # the container when loading doctrine fixtures
-    slugger:
-        alias: AppBundle\Utils\Slugger
-        public: true
