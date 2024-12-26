@@ -1,84 +1,47 @@
 Symfony Demo Application
 ========================
 
-The "Symfony Demo Application" is a reference application created to show how
-to develop applications following the [Symfony Best Practices][1].
-
-You can also learn about these practices in [the official Symfony Book][5].
+The "Symfony Demo Application" is a reference application created on https://github.com/symfony/demo/ using docker.
 
 Requirements
 ------------
 
-  * PHP 8.2.0 or higher;
-  * PDO-SQLite PHP extension enabled;
-  * and the [usual Symfony application requirements][2].
+  * Docker in your local system;
+  * Have cloned main symfony app via https://github.com/symfony/demo/;
+  * IDE like phpstorm
 
 Installation
 ------------
 
-There are 3 different ways of installing this project depending on your needs:
-
-**Option 1.** [Download Symfony CLI][4] and use the `symfony` binary installed
-on your computer to run this command:
+Inside the main project root direct run 
 
 ```bash
-symfony new --demo my_project
+docker-compose -up
+```
+Make sure to enable docker in phpstorm, and once done, you will see something like
+
+![image](https://github.com/user-attachments/assets/fa4e00a7-0e5d-401e-84fb-ef91df40cc21)
+
+To setup database and tables, run migrations command
+
+```bash
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+```
+Then run fixtures to load dummy data into the database
+
+```bash
+php bin/console doctrine:fixtures:load
 ```
 
-**Option 2.** [Download Composer][6] and use the `composer` binary installed
-on your computer to run these commands:
+Head back to fpm-php container, run
 
 ```bash
-# you can create a new project based on the Symfony Demo project...
-composer create-project symfony/symfony-demo my_project
-
-# ...or you can clone the code repository and install its dependencies
-git clone https://github.com/symfony/demo.git my_project
-cd my_project/
-composer install
-```
-
-**Option 3.** Click the following button to deploy this project on Platform.sh,
-the official Symfony PaaS, so you can try it without installing anything locally:
-
-<p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/symfonycorp/platformsh-symfony-template-metadata/main/symfony-demo.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform"><img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" /></a>
-</p>
-
-Usage
------
-
-There's no need to configure anything before running the application. There are
-2 different ways of running this application depending on your needs:
-
-**Option 1.** [Download Symfony CLI][4] and run this command:
-
-```bash
-cd my_project/
 symfony serve
 ```
 
-Then access the application in your browser at the given URL (<https://localhost:8000> by default).
+Then access the application in your browser at the given URL (<https://localhost:8000> by default), replace 8000 with 8080 port
 
-**Option 2.** Use a web server like Nginx or Apache to run the application
-(read the documentation about [configuring a web server for Symfony][3]).
-
-On your local machine, you can run this command to use the built-in PHP web server:
-
-```bash
-cd my_project/
-php -S localhost:8000 -t public/
-```
-
-Tests
------
-
-Execute this command to run tests:
-
-```bash
-cd my_project/
-./bin/phpunit
-```
 
 [1]: https://symfony.com/doc/current/best_practices.html
 [2]: https://symfony.com/doc/current/setup.html#technical-requirements
