@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bcb2fe7-bb83-40ea-84ca-f0b9dd1ce122" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/Dockerfile-nginx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/Dockerfile-php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/build/nginx/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/build/php/error_reporting.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/build/php/opcache.ini" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2qSvAF3fdobKVUoBbKkY8EdXiT3" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/moeen/Documents/Muqeet/Learning/projects/demo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/docker/build" />
+      <recent name="$PROJECT_DIR$/docker/php" />
+      <recent name="$PROJECT_DIR$/docker" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker/build" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PS-243.22562.164" />
+        <option value="bundled-php-predefined-a98d8de5180a-7980c7aaca61-com.jetbrains.php.sharedIndexes-PS-243.22562.164" />
+        <option value="php-doctrine_dbal-5543a6ebd44f-3aaabdbf" />
+        <option value="php-doctrine_inflector-5543a6ebd44f-c145f861" />
+        <option value="php-doctrine_orm-5543a6ebd44f-577e54b5" />
+        <option value="php-egulias_email_validator-5543a6ebd44f-f8e7eb7f" />
+        <option value="php-league_commonmark-5543a6ebd44f-f1aa3424" />
+        <option value="php-masterminds_html5-5543a6ebd44f-5d9de242" />
+        <option value="php-nette_utils-5543a6ebd44f-02ca1837" />
+        <option value="php-nikic_php_parser-5543a6ebd44f-9a2e7ede" />
+        <option value="php-symfony_css_selector-5543a6ebd44f-b048f1d6" />
+        <option value="php-symfony_dom_crawler-5543a6ebd44f-6096c64c" />
+        <option value="php-symfony_flex-5543a6ebd44f-d9b3138a" />
+        <option value="php-symfony_http_client-5543a6ebd44f-c3bb2506" />
+        <option value="php-symfony_http_client_contracts-5543a6ebd44f-80f50cfb" />
+        <option value="php-symfony_mailer-5543a6ebd44f-2eb20303" />
+        <option value="php-symfony_mime-5543a6ebd44f-d9f38a27" />
+        <option value="php-symfony_monolog_bridge-5543a6ebd44f-5494f911" />
+        <option value="php-symfony_monolog_bundle-5543a6ebd44f-e25dade4" />
+        <option value="php-symfony_property_access-5543a6ebd44f-62fb3a29" />
+        <option value="php-symfony_property_info-5543a6ebd44f-7ad73549" />
+        <option value="php-symfony_security_core-5543a6ebd44f-fa1d350d" />
+        <option value="php-symfony_translation-5543a6ebd44f-387e617b" />
+        <option value="php-symfony_twig_bridge-5543a6ebd44f-6aed9054" />
+        <option value="php-symfony_twig_bundle-5543a6ebd44f-825a39ce" />
+        <option value="php-symfony_validator-5543a6ebd44f-3f567c0a" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bcb2fe7-bb83-40ea-84ca-f0b9dd1ce122" name="Changes" comment="" />
+      <created>1734668645162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734668645162</updated>
+      <workItem from="1734668646427" duration="3351000" />
+      <workItem from="1735194385476" duration="6285000" />
+      <workItem from="1735203762482" duration="384000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
