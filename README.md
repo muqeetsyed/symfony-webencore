@@ -42,10 +42,15 @@ symfony serve
 
 Then access the application in your browser at the given URL (<https://localhost:8000> by default), replace 8000 with 8080 port
 
+Install webencore, by running command inside the php container
+```bash
+ composer require symfony/webpack-encore-bundle
+```
+and run npm install inside the node terminal, for that head back to main terminal of the root project (outside the docker)
+```bash
+  docker compose run node bash
+  npm install
+```
+follow the commands displayed after running the composer webencore bundle command, it will display some comands to setup, configure and execute the node webencore.
 
-[1]: https://symfony.com/doc/current/best_practices.html
-[2]: https://symfony.com/doc/current/setup.html#technical-requirements
-[3]: https://symfony.com/doc/current/setup/web_server_configuration.html
-[4]: https://symfony.com/download
-[5]: https://symfony.com/book
-[6]: https://getcomposer.org/
+
