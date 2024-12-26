@@ -60,3 +60,7 @@ RUN chown -R www-data:www-data /var/www/.composer
 #RUN composer self-update
 WORKDIR /var/www/project/
 RUN #composer install
+
+# Install Node.js and npm
+#RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && \
+#    apt-get install -y nodejs

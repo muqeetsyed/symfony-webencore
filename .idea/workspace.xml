@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bcb2fe7-bb83-40ea-84ca-f0b9dd1ce122" name="Changes" comment="" />
+    <list default="true" id="0bcb2fe7-bb83-40ea-84ca-f0b9dd1ce122" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-php" beforeDir="false" afterPath="$PROJECT_DIR$/docker/Dockerfile-php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +35,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
@@ -145,6 +160,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
       <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
       <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -163,7 +179,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;setup-webencore&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/moeen/Documents/Muqeet/Learning/projects/demo&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -195,12 +211,15 @@
       <set>
         <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PS-243.22562.164" />
         <option value="bundled-php-predefined-a98d8de5180a-7980c7aaca61-com.jetbrains.php.sharedIndexes-PS-243.22562.164" />
+        <option value="php-doctrine_collections-5543a6ebd44f-eb3532f9" />
         <option value="php-doctrine_dbal-5543a6ebd44f-3aaabdbf" />
+        <option value="php-doctrine_doctrine_bundle-5543a6ebd44f-608f84bf" />
         <option value="php-doctrine_inflector-5543a6ebd44f-c145f861" />
         <option value="php-doctrine_orm-5543a6ebd44f-577e54b5" />
         <option value="php-egulias_email_validator-5543a6ebd44f-f8e7eb7f" />
         <option value="php-league_commonmark-5543a6ebd44f-f1aa3424" />
         <option value="php-masterminds_html5-5543a6ebd44f-5d9de242" />
+        <option value="php-monolog_monolog-5543a6ebd44f-353c52f0" />
         <option value="php-nette_utils-5543a6ebd44f-02ca1837" />
         <option value="php-nikic_php_parser-5543a6ebd44f-9a2e7ede" />
         <option value="php-symfony_css_selector-5543a6ebd44f-b048f1d6" />
@@ -233,6 +252,8 @@
       <workItem from="1734668646427" duration="3351000" />
       <workItem from="1735194385476" duration="6285000" />
       <workItem from="1735203762482" duration="715000" />
+      <workItem from="1735225042528" duration="2606000" />
+      <workItem from="1735228191979" duration="3997000" />
     </task>
     <servers />
   </component>
